@@ -1,0 +1,114 @@
+body{
+  background-color: #E5E5E5;
+}
+
+.rectangle{
+  position: fixed;
+width: 200px;
+left: 0px;
+height: 100%;
+top: 0px;
+
+background: #FFFFFF;
+border: 5px solid #3A7DBA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+a{
+text-decoration: none;
+color: black;
+}
+
+a:hover{
+  color: #3a7dba;
+}
+
+br{
+  padding: 20px;
+}
+.nav{
+  
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+padding: 10px;
+
+}
+
+li{
+  font-size: 18px;
+line-height: 22px;
+}
+
+.pics{
+
+  color:  #3a7dba;
+}
+.putting{
+
+margin-left: 275px;
+margin-top: 50px;
+
+font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 41px;
+
+color: #3A7DBA;
+}
+
+.gather{
+
+margin-left: 275px;
+margin-right: 5%;
+margin-top: 50px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #000000;
+}
+
+h4{
+  font-style: italic;
+font-size: 14px;
+margin-left: 275px;
+
+color: #000000;
+font-family: montserrat;
+}
+.cuba{
+width: 35%;
+height: 35%;
+margin-left: 275px;
+margin-top: 20px;
+
+}
+ .text:hover {
+  -webkit-opacity: .8;
+ 
+}
+.text{
+  margin-left: 275px;
+  width: 300px;
+
+font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+
+color: #3A7DBA;
+opacity: 0;
+background-color: white;
+
+
+}
+ 

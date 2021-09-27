@@ -1,0 +1,129 @@
+body{
+  background-color: #E5E5E5;
+}
+
+.rectangle{
+  position: fixed;
+width: 200px;
+left: 0px;
+height: 100%;
+top: 0px;
+
+background: #FFFFFF;
+border: 5px solid #3A7DBA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+a{
+text-decoration: none;
+color: black;
+}
+
+a:hover{
+  color: #3a7dba;
+}
+
+br{
+  padding: 20px;
+}
+.nav{
+  
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+padding: 10px;
+
+}
+
+li{
+  font-size: 18px;
+line-height: 22px;
+}
+
+.pics{
+  color: #3a7dba;
+}
+.shouldyoualways{
+margin-left: 275px;
+margin-right: 5%;
+margin-top:  75px;
+
+font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 41px;
+/* identical to box height */
+
+
+
+color: #3A7DBA;
+}
+
+.superb{
+margin-right: 5%;
+margin-left: 275px;
+margin-top: 50px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: #000000;
+}
+
+.right{
+
+  margin-left: 250px;
+}
+
+.good:hover{
+  color: limegreen;
+}
+
+
+.bad:hover{
+  color: red;
+}
+
+ul{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+
+}
+.row {
+  display: flex;
+  flex-direction: row;
+
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px;
+  margin-right: 5%; }
+
+
+h2{
+  font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+margin-top: 50px;
+margin-left: 15px;
+
+
+color: #3A7DBA; /* Should be removed. Only for demonstration */
+}
+
+

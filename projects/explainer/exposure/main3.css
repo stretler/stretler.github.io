@@ -1,0 +1,212 @@
+body{
+  background-color: #E5E5E5;
+}
+
+.rectangle{
+  position: fixed;
+width: 200px;
+left: 0px;
+height: 100%;
+top: 0px;
+
+background: #FFFFFF;
+border: 5px solid #3A7DBA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+a{
+text-decoration: none;
+color: black;
+}
+
+a:hover{
+  color: #3a7dba;
+}
+
+br{
+  padding: 20px;
+}
+.nav{
+  
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+padding: 10px;
+
+}
+
+li{
+  font-size: 18px;
+line-height: 22px;
+}
+
+.pics{
+  color: #3a7dba;
+}
+
+.cameraexpo{
+margin-left: 275px;
+margin-top: 50px;
+
+  font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 75px;
+line-height: 55px;
+
+
+color: #3A7DBA;
+}
+
+p{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+margin-left: 275px;
+padding-top: 50px;
+
+color: #000000;
+}
+
+
+
+.iso{
+  background-color: #FFFFFF;
+border: 3px solid #3A7DBA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 44px;
+font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+padding: 20px;
+width: 300px;
+color: #3A7DBA;
+margin-left: 275px;
+margin-top: 60px;
+margin-bottom: 5px;
+text-align: center;
+}
+
+.isogif{
+  margin-left: 275px;
+  margin-top: 50px;
+  max-height: 284px;
+  max-width: 461px;
+  width: 50%;
+  height: 50%;
+}
+
+h3{
+  font-style: italic;
+font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+margin-left: 275px;
+margin-top: 100px;
+
+color: #000000;
+font-family: montserrat;
+}
+
+
+h4{
+font-style: italic;
+font-size: 14px;
+margin-left: 275px;
+
+color: #000000;
+font-family: montserrat;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 275px;
+}
+
+
+.column {
+  flex: 50%;
+  padding: 30px;
+  height: 15%;
+  width: 15%;
+}
+
+
+
+h2 {
+padding: 10px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #000000;
+
+background-color: #FFFFFF;
+border: 3px solid #3A7DBA;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 290px;
+
+}
+
+
+.column1 {
+  flex: 50%;
+  margin-right: 15px;
+ 
+}
+
+
+.text{
+
+
+font-family: Alfa Slab One;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+
+color: #3A7DBA;
+opacity: 0;
+background-color: white;
+
+
+}
+ 
+  .text:hover {
+  -webkit-opacity: .8;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

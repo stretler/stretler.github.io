@@ -1,0 +1,65 @@
+html{
+  background: url(assets/hometop.jpg);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+
+
+.wrapper{
+
+display: flex;
+flex-direction: column;
+text-decoration: none;
+
+}
+.title {
+  width: 100%;
+  color: rgba(255,255,255,1);
+  font-family: Alfa Slab One;
+  font-weight: Regular;
+  font-size: 96px;
+  opacity: 1;
+  text-align: center;
+}
+
+.start{
+  color: rgba(255,255,255,1);
+  font-family: Alfa Slab One;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 100px;
+  background-color: #3a7dba;
+  padding: 50px;
+  margin-left: 40% ;
+  border-radius: 35px;
+}
+
+a{
+
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+
+
+
+}

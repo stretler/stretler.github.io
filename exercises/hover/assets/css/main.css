@@ -1,0 +1,155 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background: lightblue;;
+}
+
+div.widget
+{
+  position: relative;
+  width: 355px;
+  height: 125px;
+  margin: 150px auto;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+  
+}
+
+div.widget:hover{
+
+  cursor: pointer;
+  font-size: 2em;
+  transition: all 5s ease-in-out;
+    -webkit-transform: scale(2) ;
+}
+div.left-panel
+{
+  
+}
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+div.city:hover{
+
+     background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+span.low
+{
+  font-size: 81px;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+  margin-top: 60px;
+
+
+}
+
+div.temp:hover{
+  cursor: url(assets/imgs/images.png), auto;
+    -webkit-transform: rotate(-360deg) ;
+  transform: rotate(-360deg) ;
+  cursor: pointer;
+}
+
+span.low:hover{
+  cursor: url(assets/imgs/images.png), auto;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 60px;
+  margin-left: 200px;
+  padding-left: 10px;
+    display: block;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+
+}
+
+div.right-panel:hover{
+
+  filter: none;
+  cursor: pointer;
+}
+
+
+.words span{
+  opacity: 0;
+  width: 100%;
+  margin: 100px auto;
+  position: relative;
+  font-size: 100px;
+  padding: 50px;
+  align-content: center;
+}
+
+.words-2 span{
+  animation: animateWords 10s linear infinite 0s;
+}
+
+.words span:nth-child(1) {
+  animation-delay: 1s;
+  color: lightgoldenrodyellow;
+}
+.words span:nth-child(2) {
+  animation-delay: 2s;
+  color: darkblue;
+}
+.words span:nth-child(3) {
+  animation-delay: 3s;
+  color: floralwhite;
+}
+.words span:nth-child(4) {
+  animation-delay: 4s;
+  color: mediumpurple;
+}
+.words span:nth-child(5) {
+  animation-delay: 5s;
+  color: orangered;
+}
+
+
+@keyframes animateWords {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+    25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+

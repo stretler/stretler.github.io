@@ -1,0 +1,57 @@
+            
+ul {
+  display: block;
+  margin-left: -10px;
+  
+}
+
+ul li {
+  display: block;
+  position: relative;
+  
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 16px;
+
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  top: 1.2em;
+  left: -30px;
+  margin-top: -.9em;
+  background: #f69ec4;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+   background: linear-gradient(45deg, limegreen, cyan);
+   
+}
+
+body {
+  font-family: sans-serif;
+  color: whitesmoke;
+  margin-left: 500px;
+ 
+}
+
+html{
+  background-color: darkslategrey;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;}
+
+
+}
+h1{
+color: lightyellow;
+}
+
+h2{
+  color: lightskyblue;
+}
