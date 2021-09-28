@@ -2,22 +2,16 @@ body {
  
 }
 
-title{
-  font-family: Roboto Slab;
-  font-weight: 700px;
-  font-size: 100px;
-  text-align: center;
-}
-
 
 ul {
-  background-color: #333;
+  background-color: saddlebrown;
   position: sticky;
    display: flex;
   flex-direction: row;
   padding: 20px;
   list-style-type: none;
-  margin-right: 400px;
+  margin-left: 5%;
+  font-family: roboto slab;
 }
 
 li {
@@ -45,10 +39,15 @@ p{
 
 h1{
   font-family: Roboto Slab;
+  font-weight: 700px;
+  font-size: 50px;
+  text-align: center;
+  color: chocolate;
 }
 
 h2{
   font-family: Roboto Slab;
+  font-size: 30px;
 }
 
 h3{

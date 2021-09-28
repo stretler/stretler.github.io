@@ -1,0 +1,40 @@
+html{
+	background-color: lightskyblue;
+	font-family: sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	color: yellow;
+}
+
+.question{
+	color: whitesmoke;
+	background-color: black;
+	padding: 15px;
+	font-size: 15px;
+	border-radius: 30px;
+	width: 200px;
+	font-family: monospace;
+}
+
+img{
+	width: 40%;
+	border-style: outset;
+	border-color: yellow;
+	border-width: 5px;
+}
+
+h3{
+
+color: white;
+background-color: navy;
+padding: 20px;
+border-radius: 50px;
+width: 250px;
+}
+
+h2{
+	text-align: center;
+}
