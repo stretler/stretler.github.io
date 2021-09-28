@@ -86,9 +86,12 @@ height: 30%;
 margin-left: 275px;
 margin-right: 20%;
 margin-top: 50px;
+transition: transform 2s ease-in-out;
 }
 
-
+.dial:hover{
+transform: rotate(360deg);
+}
 
 
 
