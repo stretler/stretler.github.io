@@ -1,4 +1,17 @@
             
+body {
+  font-family: sans-serif;
+  color: whitesmoke;
+  margin-left: 5%;
+ }
+
+ h1{
+color: lightyellow;
+text-align: center;
+font-size: 75px;
+}
+
+
 ul {
   display: block;
   margin-left: -10px;
@@ -30,12 +43,6 @@ ul li:before {
    
 }
 
-body {
-  font-family: sans-serif;
-  color: whitesmoke;
-  margin-left: 5%;
- 
-}
 
 html{
   background-color: darkslategrey;
@@ -48,11 +55,7 @@ a{
 
 
 }
-h1{
-color: lightyellow;
-text-align: center;
-font-size: 75px;
-}
+
 
 h2{
   color: lightskyblue;
