@@ -33,7 +33,7 @@ ul li:before {
 body {
   font-family: sans-serif;
   color: whitesmoke;
-  margin-left: 500px;
+  margin-left: 5%;
  
 }
 
@@ -50,6 +50,8 @@ a{
 }
 h1{
 color: lightyellow;
+text-align: center;
+font-size: 50px;
 }
 
 h2{
