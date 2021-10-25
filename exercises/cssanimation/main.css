@@ -86,7 +86,7 @@ svg{
             top: 5%;
             right: 5%;
             background-color: darkslategrey;
-            -webkit-animation: stretch 2.0s ease-out alternate infinite ;
+            -webkit-animation: stretch 1.5s ease-out alternate infinite ;
         }
         .element3 {
             height: 50px;
@@ -95,7 +95,7 @@ svg{
             top: 90%;
             left: 5%;
             background-color: darkslategrey;
-            -webkit-animation: stretch 2.0s ease-out alternate infinite ;
+            -webkit-animation: stretch 1.5s ease-out alternate infinite ;
         }
   .element4 {
             height: 50px;
@@ -111,7 +111,7 @@ svg{
   
         @keyframes stretch {
             0% {
-                transform: scale(.5);
+                transform: scale(.7);
                 background-color: slategrey;
                 border-radius: 100%;
             }
@@ -121,7 +121,7 @@ svg{
             }
   
             100% {
-                transform: scale(2.0);
+                transform: scale(2.2);
                 background-color: lightgrey;
             }
         }
