@@ -3,103 +3,71 @@ body{
 	background-color: black;
 }
 
-div {
-  animation: rotate-all 2s 0 infinite linear alternate;
+svg{
+  width: 20%;
 }
 
-.div1 {
-  width: 80px;
-  height: 80px;
-  background-color: #669999;
-  position: relative;
-  margin: auto;
-  animation: square-to-circle 2.5s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
 
+@keyframes moveX {
+  from { left: 0; } to { left: 1000px; }
 }
 
-.div2 {
-    width: 80px;
-  height: 80px;
-  background-color: #669999;
-  position: relative;
-  margin: auto;
-  animation: square-to-circle2 2.5s .42s infinite cubic-bezier(1,.015,.295,1.225) alternate-reverse;
+
+@keyframes moveY {
+  from { top: 0; } to { top: 500px; }
 }
 
-#one {
-  top: 150px;
-}
- 
-#two {
-  top: 150px;
-  right: 80px;
-}
 
-#three {
-  top: 150px;
-}
-
-#four {
-  bottom: 10px;
-  left: 80px;
-}
-
-@keyframes square-to-circle {
-  0%  {
-    border-radius:0 0 0 0;
-    background:;
-    transform:rotate(45deg);
+@keyframes rotation {
+  0% {
+    transform: rotate(0turn);
   }
-  25%  {
-    border-radius:50% 0 0 0;
-    background:darksalmon;
-    transform:rotate(135deg);
+  50% {
+    transform: rotate(0.5turn);
   }
-  50%  {
-    border-radius:50% 50% 0 0;
-    background:indianred;
-    transform:rotate(180deg);
-  }
-  75%  { 
-    border-radius:50% 50% 50% 0;
-    background:lightcoral;
-    transform:rotate(315deg);
-  }
-  100% {  
-    border-radius:50%;
-    background:darksalmon;
-    transform:rotate(404deg);
+  100% {
+    transform: rotate(1turn);
   }
 }
 
-@keyframes square-to-circle2 {
-  0%  {
-    border-radius:0 0 0 0;
-    background:;
-    transform:rotate(45deg);
+
+#blob1{
+  display: block;
+  position: absolute;
+  -webkit-animation: moveX 5s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate, rotation 7s ease infinite;
   }
-  25%  {
-    border-radius:0 0 50% 0;
-    background:darksalmon;
-    transform:rotate(135deg);
-  }
-  50%  {
-    border-radius:0 0 50% 50%;
-    background:indianred;
-    transform:rotate(180deg);
-  }
-  75%  { 
-    border-radius:50% 0 50% 50%;
-    background:lightcoral;
-    transform:rotate(315deg);
-  }
-  100% {  
-    border-radius:50%;
-    background:darksalmon;
-    transform:rotate(404deg);
-  }
+
+
+#blob2{
+
+   display: block;
+  position: absolute;
+  -webkit-animation: moveY 2s linear 0s infinite alternate, moveX 4.2s linear 0s infinite alternate, rotation 7s ease infinite;
+  
+
 }
 
+
+#blob3{
+   display: block;
+  position: absolute;
+  -webkit-animation: moveY 2s linear 0s infinite alternate-reverse, moveX 3.4s linear 0s infinite alternate-reverse, rotation 7s ease infinite;
+  
+}
+
+#circle1{
+  display: block;
+  position: absolute;
+  -webkit-animation: moveX 1s linear 0s infinite alternate-reverse, moveY 5s linear 0s infinite alternate-reverse;
+  opacity: .8;
+}
+
+#circle2{
+  display: block;
+  position: absolute;
+  -webkit-animation: moveX 6s linear 0s infinite alternate, moveY .5s linear 0s infinite alternate;
+  opacity: .8;
+}
 
 
 
