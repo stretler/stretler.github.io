@@ -1,0 +1,45 @@
+
+body {
+  background-color:  black;
+}
+
+
+
+.star {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  white;
+  color:  black;
+  font-size:  60px;
+  font-size: 20px;
+  text-align:  center;
+  transition:  all 100ms;
+  width: 100px;
+  margin-left: 42%;
+}
+svg{
+	fill: white;
+}
+svg:hover {
+  cursor:  pointer;
+}
+
+.buttonOn {
+  fill:  yellow;
+}
+
+.light {
+  background-color: lightgrey;
+}
+
+.staron {
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:  yellow;
+  color:  black;
+  font-size:  60px;
+  font-size: 20px;
+  text-align:  center;
+  transition:  all 100ms;
+  width: 100px;
+  margin-left: 42%;
