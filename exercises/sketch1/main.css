@@ -1,0 +1,29 @@
+body {
+  height: 100px;
+  place-items: center;
+  margin: auto;
+}
+#color {
+  background: white;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 100px;
+  font-weight: 500;
+  font-family: comfortaa;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+#generate{
+text-align: center;
+padding: 50px;
+font-family: comfortaa;
+font-size: 150px;
+font-weight: 700;
+}
+
+#generate:hover{
+	cursor: pointer;
+}
