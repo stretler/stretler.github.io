@@ -1,0 +1,93 @@
+
+.slider1, .slider2, .slider3 {
+  z-index: 1;
+  border: 1px solid black;
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 500px; /* Specified height */
+    height: 20px; /* Specified height */
+    background: white; /* background color */
+    outline: none; /* Remove outline */
+    opacity: 0.4; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: all .2s;
+    border-radius: 15px;
+  }
+
+.slider2{
+	margin-top: 20px;
+}
+
+.slider3{
+	margin-top: 40px;
+}
+
+/* Mouse-over effects */
+.slider1:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider1::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: darkgrey; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider1::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: darkgrey;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider2:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: darkgrey; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider2::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: darkgrey;
+  cursor: pointer; /* Cursor on hover */
+
+ }
+
+ .slider3:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider3::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%; /* Make it a circle */
+  background: darkgrey; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider3::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: darkgrey;
+  cursor: pointer; /* Cursor on hover */
+}
+}
+
