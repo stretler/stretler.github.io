@@ -44,7 +44,7 @@ frameRate(20);
     let r = sliderA.value();
   let g = sliderB.value();
   let b = sliderC.value();
-stroke((r + 20), (g + 20), (b + 20));
+stroke((r + (random(50))), (g + (random(50))), (b + random(50)));
    fill(r, g, b);
 strokeWeight(2);
  ellipse(mouseX, mouseY, random(10,100));
