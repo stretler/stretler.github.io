@@ -1,0 +1,65 @@
+body {
+  background-color: lightblue;
+  color:  navy;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size:  50px;
+}
+
+.buttonn{
+   background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+  font-size: 12px;
+  font-family: kanit;
+  margin: 5px;
+}
+
+.buttonn:hover{
+  cursor: pointer;
+  background-color: navy;
+  color: white;
+}
+
+.buttonn1{
+   background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+  font-size: 12px;
+  font-family: kanit;
+  margin: 5px;
+}
+
+.buttonn1:hover{
+  cursor: pointer;
+  background-color: #90ff9c;
+}
+
+
+
+.tick {
+  font-size:  15px;
+  letter-spacing: 1px;
+}
+
+.domain {
+  display: none;
+}
+
+line {
+  display: none;
+}
+
