@@ -6,8 +6,8 @@ body {
 #my_dataviz{
 	color: #19205b;
 	font-size: 20px;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .tooltip{
@@ -19,29 +19,31 @@ body {
 h1{
 	color: #ffffff;
 	font-size: 50px;
+  text-align: center;
 }
 .node:hover{
   stroke-width: 7px !important;
   opacity: 1 !important;
 }
 
-image{
-	width: 30px;
-	height: 30px;
+#buttons{
+ display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 button{ 
   background-color: white;
   color: #19205b;
   border-radius: 50px;
-  max-width: 150px;
+  max-width: 250px;
   text-align: center;
    font-size: 20px;
- padding: 10px;
-  transition: background-color 400ms ease;
+ padding: 15px;
   font-family: hammersmith one;
   border-style: none;
   margin-right: 20px;
   margin-left: 10px;
+
 } 
 
 button:hover{

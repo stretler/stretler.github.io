@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: lavender;
   margin: 0;
 }
 
@@ -11,4 +11,5 @@ model-viewer {
 
 .interaction-prompt {
   font-size: 150px;
+  color: hotpink;
 }

@@ -1,10 +1,10 @@
 var width = 1000
-var height = 800
+var height = 900
 
 var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", 1000)
-    .attr("height", 800)
+    .attr("height", 900)
 
 var data = [
  {
@@ -616,7 +616,7 @@ var color = d3.scaleOrdinal()
 
 var size = d3.scaleLinear()
     .domain([0, 5])
-    .range([5,35]) 
+    .range([5,45]) 
 
  var Tooltip = d3.select("#my_dataviz")
     .append("div")
@@ -646,18 +646,39 @@ var size = d3.scaleLinear()
 
 
 var node = svg.append("g")
-  .selectAll("circle")
+  .selectAll("div")
   .data(data)
   .enter()
-  .append("circle")
+
+
+var defs = node.append("defs");
+defs.append('pattern')
+.data(data)
+  .attr("id", function(d) { return d.id;}  )
+.attr("width", 70 + "px")
+  .attr("height", 105 + "px")
+  .attr("x", 0)
+  .attr("y", 0)
+  .attr('patternUnits', 'userSpaceOnUse')
+  .attr("preserveAspectRatio", "none")
+  .append("image")
+  .attr("width", 70)
+    .attr("height", 105)
+  .attr("xlink:xlink:href", function(d) { return d.img;})
+
+
+
+var circle = node.append("circle")
+.data(data)
      .attr("class", "node")
       .attr("r", function(d){ return size(d.MyRating)})
-      .attr("cx", width / 2)
-      .attr("cy", height / 2)
       // .style("fill", function(d){ return color(d.Genre)} )
       .attr("fill",function(d) { return "url(#"+ d.id+")" }  )
       .attr("stroke", function(d){ return color(d.Genre)})
       .style("stroke-width", 1)
+      .style("opacity", 1)
+      .attr("cx", width / 2)
+      .attr("cy", height / 2)
       .on("mouseover", mouseover) 
       .on("mousemove", mousemove)
       .on("mouseleave", mouseleave)
@@ -666,26 +687,32 @@ var node = svg.append("g")
            .on("drag", dragged)
            .on("end", dragended));
 
-// var defs = node.append("defs");
-// defs.append('pattern')
-//   .attr("id", function(d) { return d.id;}  )
-//   .attr("width", 1)
-//   .attr("height", 1)
-//   .attr("x", 0)
-//   .attr("y", 0)
-//   .attr('patternUnits', 'userSpaceOnUse')
-//   .append("image")
-//   .attr("xlink:xlink:href", function(d) { return d.img;})
+var click = function(d) {
+    circle
+       .attr("r", function(d){ return size(d.MyRating)})
+  }
+
+  var click2 = function(d) {
+    circle
+       .attr("r", function(d){ return size(d.AvgRating)})
+  }
+var clicking = d3.select("#one")
+     .on("click", click)
+
+var clicking = d3.select("#two")
+     .on("click", click2)
+
 
 var simulation = d3.forceSimulation()
-      .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
-      .force("charge", d3.forceManyBody().strength(.1)) // Nodes are attracted one each other of value is > 0
-      .force("collide", d3.forceCollide().strength(.2).radius(function(d){ return (size(d.MyRating)+3) }).iterations(1)) // Force that avoids circle overlapping
+      .force("center", d3.forceCenter().x(width / 2).y(height / 2)) 
+      .force("charge", d3.forceManyBody().strength(.1)) 
+      .force("collide", d3.forceCollide().strength(.2).radius(function(d){ return (size(d.MyRating)+3) }).iterations(1)) 
+
 
 simulation
     .nodes(data)
     .on("tick", function(d){
-      node
+      circle
           .attr("cx", function(d){ return d.x; })
           .attr("cy", function(d){ return d.y; })
     });
@@ -705,4 +732,5 @@ function dragended(d) {
 }
 
 
-  
+
+     
