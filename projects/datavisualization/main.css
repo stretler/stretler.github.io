@@ -1,6 +1,7 @@
 body {
-  background-color:  #19205b;
+  background: -webkit-linear-gradient(270deg, rgba(25,32,91,1) 23%, rgba(66,81,203,1) 100%);0%);
   font-family: hammersmith one;
+  background-color: #19205b;
 }
 
 #my_dataviz{
@@ -50,74 +51,3 @@ button:hover{
 	cursor: pointer;
 }
 
-
-/*
-body {
-  background-color:  #19205b;
-  margin: 0;
-  padding: 20px;
-    font-family: hammersmith one;
-}
-
-h1{
-	color: #ffffff;
-	font-size: 50px;
-}
-
-.info {
-  max-width: 60%;
-  margin: auto;
-
-}
-
-.rating {
-  font-size: 10px;
-  font-family: arial;
-  border-radius: 60%;
-  position: absolute;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-}
-
-p{
-	  font-size: 10px;
-	  opacity: 0;
-	  background-color: #ffffff;
-}
-
-p:hover{
-	  font-size: 10px;
-	  opacity: 1;
-}
-
-.rating1 {
-    background-color: red;
-    top: 250px;
-    left: 500px;
-}
-
-.rating2 {
-  background-color: green;
-    top: 300px;
-    left: 400px;
-}
-
-.rating3 {
-  background-color: purple;
-}
-
-.rating4 {
-  background-color: yellow;
-}
-
-.rating5 {
-  background-color: blue;
-}
-
-.rating6 {
-  background-color: orange;
-}
-*/
