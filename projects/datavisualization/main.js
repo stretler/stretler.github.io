@@ -1,9 +1,9 @@
-var width = 1000
+var width = 1200
 var height = 900
 
 var svg = d3.select("#my_dataviz")
   .append("svg")
-    .attr("width", 1000)
+    .attr("width", 1200)
     .attr("height", 900)
 
 var data = [

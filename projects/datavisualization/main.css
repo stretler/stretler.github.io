@@ -25,6 +25,7 @@ h1{
 .node:hover{
   stroke-width: 7px !important;
   opacity: 1 !important;
+  cursor: pointer;
 }
 
 #buttons{
