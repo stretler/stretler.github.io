@@ -206,16 +206,7 @@ box-shadow: 2px -1px 24px rgba(0, 0, 0, 0.25);
 
 }
 
-img:hover{
-	cursor: url(assets/head.png), auto;
-animation: scale 4s;
 
-}
-
-@keyframes scale{
-
-	100%{width: 100%;}
-}
 .display{
 	display: flex;
 	flex-direction: row;

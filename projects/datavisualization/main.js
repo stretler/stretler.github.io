@@ -1,10 +1,10 @@
-var width = 1200
-var height = 900
+var width = 1280
+var height = 1300
 
 var svg = d3.select("#my_dataviz")
   .append("svg")
-    .attr("width", 1200)
-    .attr("height", 900)
+    .attr("width", 1280)
+    .attr("height", 1300)
 
 var data = [
  {
@@ -814,7 +814,7 @@ var color = d3.scaleOrdinal()
 
 var size = d3.scaleLinear()
     .domain([0, 5])
-    .range([5,45]) 
+    .range([5,65]) 
 
  var Tooltip = d3.select("#my_dataviz")
     .append("div")
@@ -826,6 +826,7 @@ var size = d3.scaleLinear()
     .style("border-radius", "5px")
     .style("padding", "10px")
   
+
   
   var mouseover = function(d) {
     Tooltip
@@ -833,7 +834,7 @@ var size = d3.scaleLinear()
   }
   var mousemove = function(d) {
     Tooltip
-      .html(d.Film + "<br>" + "My Rating: "+ d.MyRating + "<br>"+ "Average Rating: " + d.AvgRating + "<br>" + "Genre: " + d.Genre)
+      .html("<b>" + d.Film + "</b>" + "<br>" + "My Rating: "+ d.MyRating + "<br>"+ "Average Rating: " + d.AvgRating + "<br>" + "Genre: " + d.Genre)
        .style("left", (d3.mouse(this)[0]+2) + "px")
       .style("top", (d3.mouse(this)[1]) + "px")
   }
@@ -884,6 +885,7 @@ var circle = node.append("circle")
            .on("start", dragstarted)
            .on("drag", dragged)
            .on("end", dragended));
+
 
 var click = function(d) {
     circle
